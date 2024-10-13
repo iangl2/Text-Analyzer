@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to bottom, lightgray, black);
+    background-color:cadetblue;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -11,10 +11,13 @@ body{
 #cuadro{
     border-style: groove;
     border-radius: 25px;
+    background-color: white;
+    
 }
 #results{
     border-style: groove;
     border-radius: 25px;
+    background-color: white;
 }
 #botones{
     vertical-align: top;
@@ -23,10 +26,10 @@ body{
 
 h1{
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 h3{
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: white;
 }
