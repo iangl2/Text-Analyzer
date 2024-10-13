@@ -1,8 +1,32 @@
-#div{
-    color:red;
+body{
+    background: linear-gradient(to bottom, lightgray, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#display{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+#cuadro{
+    border-style: groove;
+    border-radius: 25px;
+}
+#results{
+    border-style: groove;
+    border-radius: 25px;
+}
+#botones{
+    vertical-align: top;
+    text-align: center;
 }
 
 h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
 
-    color: blueviolet;
+h3{
+    text-align: center;
+    color: rgb(0, 0, 0);
 }

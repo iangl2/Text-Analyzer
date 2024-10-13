@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Analizador de Texto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Analizador de texto</h1>
+    
+    <h1>Analizador de Texto</h1>
     <h3>Por Ian Lee y Raúl Gómez</h3>
-    <input type="file">
     <br>
-    <form>
-        <label for="palabra">Palabra a buscar: </label>
-        <input type="text" id="palabra" name="palabra">
-    </form>
-    <br>
-    <iframe src="about:blank"></iframe>
-    <br>
-    <button>Contar Oraciones</button>
-    <button>Contar Palabras</button>
-    <button>Longitud Promedio de Palabras</button>
-    
-
-
-    
-
+    <div id="display">
+        <div id="cuadro">
+            <iframe id="ver_texto" src="about:blank" frameborder="0" height="250px"></iframe>    
+            <br>
+        </div>    
+        <div id="botones"> 
+            <input type="file">
+            <br>
+            <br>
+            <label for="palabra">Palabra a buscar: </label>
+            <input type="text" id="palabra" name="palabra">    
+            <br>
+            <br>
+            <button id="palabras">Contar Palabras</button>
+            <br>
+            <br>
+            <button id="oraciones">Contar Oraciones</button>    
+            <br>
+            <br>
+            <button id="promedio">Longitud Promedio de Palabras</button>   
+        </div>
+        <div id="results">
+            <iframe id="resultados" src="about:blank" frameborder="0"></iframe>
+        </div>
+    </div> 
 
 
     <script src="app.js"></script>
