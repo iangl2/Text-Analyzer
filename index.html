@@ -5,38 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analizador de Texto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
-    <h1>Analizador de Texto</h1>
-    <h3>Por Ian Lee y Raúl Gómez</h3>
-    <br>
-    <div id="display">
-        <textarea name="texto" id="cuadro" rows="5" cols="40">
+    <nav id="nav">
+        <div>
+
+            <h1>Analizador de Texto</h1>
+            <h3>Por Ian Lee y Raúl Gómez</h3>
             
-        </textarea>   
-        <div id="botones"> 
-            <input type="file">
-            <br>
-            <br>
-            <label for="palabra">Palabra a buscar: </label>
-            <input type="text" id="palabra" name="palabra">    
-            <br>
-            <br>
-            <button id="palabras">Contar Palabras</button>
-            <br>
-            <br>
-            <button id="oraciones">Contar Oraciones</button>    
-            <br>
-            <br>
-            <button id="promedio">Longitud Promedio de Palabras</button>   
         </div>
-        <div id="results">
-            <iframe id="resultados" src="about:blank" frameborder="0"></iframe>
+    </nav>
+    <main id="main">
+
+        <div id="display">
+            <div id="cajas">
+
+                <div name="texto" id="cuadro" rows="5" cols="40">
+                   
+                </div>   
+                <div id="results">
+              
+                </div>
+            </div>
+            
+            <div id="menu"> 
+                <label for="palabra">Archivo a leer: </label>
+                <input id="input" type="file" accept=".txt"  >
+                <label for="palabra">Palabra a buscar: </label>
+               
+
+                    <input type="text" id="palabra" name="palabra"> 
+                    <h6 id="contador">Coincidencias: 0</h6>   
+                
+    <div id="botones">
+
+        <button class="boton" id="palabras">Contar Palabras</button>
+        
+        <button class="boton" id="oraciones">Contar Oraciones</button>    
+        
+        <button class="boton" id="promedio">Longitud Promedio</button>   
+    </div>
         </div>
-    </div> 
-
-
+        </div> 
+    
+</main>
+    
     <script src="app.js"></script>
 </body>
 </html>

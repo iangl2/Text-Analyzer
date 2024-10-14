@@ -1,35 +1,138 @@
+*{
+    /*border: 1px solid black;*/
+    border:none;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+#nav{
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 body{
-    background-color:cadetblue;
+    background-color:white;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100vh;
+}
+h1{
+    color: magenta;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
 }
 #display{
+    width: 75%;
     display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+   
+
 }
 #cuadro{
     border-style: groove;
     border-radius: 25px;
     background-color: white;
+    padding: 10px;
+    resize: none;
+    min-height: 175px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    padding: 20px ;
+    min-width: 350px;
+    max-height: 175px;
+    max-width: 350px;
     
 }
 #results{
     border-style: groove;
     border-radius: 25px;
     background-color: white;
+    padding: 10px;
+    min-width: 350px;
+    border: 1px solid black;
+    min-height: 175px;
+    padding: 20px ;
+    max-width: 350px;
+    max-height: 175px;
+
+    overflow-y: scroll;
+    overflow: hidden; /* Asegura que el contenido no se salga del div */
+    overflow-y: auto; 
+    
+
+}
+#cajas{
+    min-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu{
+    padding: 20px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    min-width: 200px;
+
+    border-radius: 25px;
+    min-width: 400px;
 }
 #botones{
-    vertical-align: top;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
-
+#palabra{
+    min-height: 20px;
+    max-width: 200px;
+    padding: 1px;
+}
 h1{
-    text-align: center;
-    color: white;
-}
 
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(30deg, #0000FF, #FF00FF, #0000FF); /* Gradiente cíclico */
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: 300%; /* Más espacio para el movimiento */
+            animation: moveGradient 5s linear infinite; /* Movimiento continuo */
+        }
+
+        @keyframes moveGradient {
+            0% {
+                background-position: 0% 50%; /* Comienza en azul */
+            }
+            50% {
+                background-position: 50% 100% ; /* Alcanza el magenta */
+            }
+            100% {
+                background-position: 150% 200%; /* Regresa al azul */
+            }
+        }
 h3{
     text-align: center;
     color: white;
+}
+.highlight{
+    
+    background-color: yellow;
+}
+.boton{
+    min-height: 25px;
+    max-width: 120px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
 }
